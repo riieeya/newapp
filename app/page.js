@@ -26,7 +26,8 @@ export default function Home() {
     <main>
       <nav className="nav wrap">
         <a className="brand" href="#home" aria-label="FreshBite home">
-          <span className="brand-mark">F</span> Fresh<span>Bite</span>
+          <span className="brand-mark">F</span>
+          <span className="brand-name">FreshBite</span>
         </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">☰</button>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
@@ -114,7 +115,7 @@ export default function Home() {
 
       <footer id="contact">
         <div className="wrap footer-grid">
-          <a className="brand light" href="#home"><span className="brand-mark">F</span> Fresh<span>Bite</span></a>
+          <a className="brand light" href="#home"><span className="brand-mark">F</span><span className="brand-name">FreshBite</span></a>
           <p>Made for hungry people<br/>and brighter days.</p>
           <div><a href="mailto:hello@freshbite.example">hello@freshbite.example</a><small>Open daily · 10am–10pm</small></div>
         </div>
