@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap');
 
-:root { --ink:#19352d; --green:#0d7a5f; --lime:#d9f36d; --cream:#fffaf0; --orange:#ff6b35; --line:#dce8df; }
+:root { --ink:#19352d; --green:#0d7a5f; --lime:#d9f36d; --cream:#fffaf0; --orange:#ff6b35; --brand-brown:#8b4513; --line:#dce8df; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background:var(--cream); font-family:"DM Sans",sans-serif; }
@@ -9,7 +9,7 @@ a { color:inherit; text-decoration:none; }
 .wrap { width:min(1160px,calc(100% - 40px)); margin-inline:auto; }
 .nav { height:88px; display:flex; align-items:center; justify-content:space-between; position:relative; z-index:10; }
 .brand { font-weight:800; font-size:23px; display:flex; align-items:center; letter-spacing:-1px; }
-.brand>span:last-child { color:var(--orange); }
+.brand-name { color:var(--brand-brown); }
 .brand-mark { display:grid; place-items:center; width:34px; height:34px; margin-right:9px; color:white; background:var(--green); border-radius:50% 50% 45% 55%; font-family:"Fraunces"; }
 .nav-links { display:flex; gap:38px; font-size:14px; font-weight:600; }
 .nav-links a:hover { color:var(--orange); }
@@ -73,7 +73,7 @@ h2 { font-size:clamp(42px,5vw,68px); letter-spacing:-3px; line-height:1; margin:
 .story-visual small { display:block;font-size:13px;margin-top:-26px; }
 footer { background:var(--ink); color:white; padding:55px 0; }
 .footer-grid { display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:30px; }
-.brand.light>span:last-child { color:var(--lime); }.footer-grid p { margin:0;color:#b6c7c0;line-height:1.6; }.footer-grid>div { text-align:right; }
+.brand.light .brand-name { color:#d8a77f; }.footer-grid p { margin:0;color:#b6c7c0;line-height:1.6; }.footer-grid>div { text-align:right; }
 .footer-grid small { display:block;color:#8da198;margin-top:8px; }
 .toast { position:fixed; left:50%; bottom:22px; transform:translate(-50%,100px); background:var(--ink); color:white; padding:14px 22px; border-radius:999px; z-index:20; opacity:0; transition:.3s; pointer-events:none; }
 .toast.show { transform:translate(-50%,0);opacity:1; }
